@@ -1,0 +1,97 @@
+#allTextForm {
+	margin-bottom: 10px;
+	width:99%;
+	height: 50px;
+}
+
+
+/* thiep lap css cho footer */
+.foot {
+
+	background-color:#444;
+}
+
+/* thiep lap css cho nhung lien ket o footer */
+ul {
+	color:#FFF;
+}
+
+.foot ul > li > a {
+	color: white;
+	font-size:13px;
+}
+
+
+.foot ul > li > a:hover {
+	color: white;
+	
+}
+
+.foot .title {
+	color:#FFF;
+}
+
+
+
+/* chinh mau nen cho thanh header */
+.header {
+	background-color: #006799;
+}
+
+/* thiep lap css cho danh sach trong thanh footer */
+.float-left {
+	float: left;
+	padding-top: 10px;
+	
+}
+.first {
+	margin-left: 220px;
+}
+
+/* thiet lap css cho nhung tieu de o footer */
+.label {
+	color: white;
+}
+
+/* thiet lap css cho chapter */
+#showChapter {
+	text-align: center;
+	width:90%;
+}
+
+/* thiet lap css cho dòng chữ trung tâm đào tạo từ xa */
+#ttdttx {
+	font-size: 40px;
+}
+
+/* thiet lap css cho footer */
+footer {
+	border-top:0px;
+	background-color:#fff !important;
+}
+
+/* thiet lap css cho 3 dòng cuối của footer */
+#contactDttx {
+	background-color:#ddd;
+}
+
+/* thiet lap css cho các thẻ a nàm trong card */
+#showCard:hover {
+	
+	text-decoration:underline !important;
+}
+
+/* thiet lap css cho col 8 hiển thị nội dung của chapter */
+
+
+/* thiet lap css cho từng card  */
+.card {
+	max-width: 18rem; 
+	margin-right:10px; 
+	border-top:8px solid #77216f !important;
+}
+
+/* thiet lap css cho tất cả card  */
+#detail {
+	margin: 0 20%;
+}
