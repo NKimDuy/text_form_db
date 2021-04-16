@@ -32,8 +32,8 @@ AppAsset::register($this);
 		
 		<img src="<?= Yii::$app->request->baseUrl . '/images/' . 'oude.png' ?>" class="img-fluid">  
 	</div>
-	<div class = 'col media-body text-center'>
-		<span id="ttdttx" class = "text-light font-weight-bolder">TRUNG TÂM ĐÀO TẠO TỪ XA</span>
+	<div id="ttdttx" class = 'col media-body text-center text-light font-weight-bolder'>
+		TRUNG TÂM ĐÀO TẠO TỪ XA
 	</div>
 </div>
 

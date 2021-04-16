@@ -1,3 +1,15 @@
+@media screen and (max-width:400px) { /* khi co màn hình về width 400px thì kích thước của contentOfChapter và contentOfTitle sẽ thay đổi  */
+	#contentOftitle {
+		max-width:41.66667%;
+	
+	}
+	#contentOfChapter {
+		max-width:58.33333%;
+	
+	}
+}
+
+
 #allTextForm {
 	margin-bottom: 10px;
 	width:99%;
@@ -8,7 +20,7 @@
 /* thiep lap css cho footer */
 .foot {
 
-	background-color:#444;
+	background-color:#333;
 }
 
 /* thiep lap css cho nhung lien ket o footer */
@@ -61,7 +73,8 @@ ul {
 
 /* thiet lap css cho dòng chữ trung tâm đào tạo từ xa */
 #ttdttx {
-	font-size: 40px;
+	font-size: 20px;
+	
 }
 
 /* thiet lap css cho footer */
@@ -71,8 +84,14 @@ footer {
 }
 
 /* thiet lap css cho 3 dòng cuối của footer */
+#contactDttx  ul {
+	
+	font-size:13px;
+}
+
 #contactDttx {
-	background-color:#ddd;
+	background-color:#2d2d2d;
+	
 }
 
 /* thiet lap css cho các thẻ a nàm trong card */
