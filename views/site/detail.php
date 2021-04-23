@@ -25,8 +25,8 @@ $this->title = 'My Yii Application';
 			<ul id="setActive" class="list-unstyled components mb-5">
 			
 				<?php forEach($chapter as $item) { ?>
-					<li id="turnActive<?= $item['ID_chapter'];?>" onclick="choiceWhichLiActive('<?= $item['ID_chapter'];?>')">
-						<a onclick="showArticle('<?= $item['ID_chapter'];?>', '<?= $item['content_chapter'];?>')" href="javascript:void(0);"><i class="fas fa-angle-right"></i> <?= $item['name_chapter'];?></a>
+					<li id="turnActive<?= $item['ID'];?>" onclick="choiceWhichLiActive('<?= $item['ID'];?>')">
+						<a onclick="showArticle('<?= $item['ID'];?>', '<?= $item['descript'];?>')" href="javascript:void(0);"><i class="fas fa-angle-right"></i> <?= $item['descript'];?></a>
 					</li>
 				<?php } ?>
 				

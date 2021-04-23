@@ -100,6 +100,31 @@ INSERT INTO `detail` VALUES (1,'Thông báo số 538/QLCL-QLVBCC của Bộ Giá
 UNLOCK TABLES;
 
 --
+-- Table structure for table `detail_test`
+--
+
+DROP TABLE IF EXISTS `detail_test`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `detail_test` (
+  `ID` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `detail` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`ID`),
+  CONSTRAINT `fk_test` FOREIGN KEY (`ID`) REFERENCES `test` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `detail_test`
+--
+
+LOCK TABLES `detail_test` WRITE;
+/*!40000 ALTER TABLE `detail_test` DISABLE KEYS */;
+INSERT INTO `detail_test` VALUES ('hd_hv_1_p_1_c_1','something 1'),('hd_hv_1_p_1_c_10','thing 10'),('hd_hv_1_p_1_c_11','thing 11'),('hd_hv_1_p_1_c_12','thing 12'),('hd_hv_1_p_1_c_2','something 2'),('hd_hv_1_p_1_c_3','thing 3'),('hd_hv_1_p_1_c_4','thing 4'),('hd_hv_1_p_1_c_5','thing 5'),('hd_hv_1_p_1_c_6','thing 6'),('hd_hv_1_p_1_c_7','thing 7'),('hd_hv_1_p_1_c_8','thing 8'),('hd_hv_1_p_1_c_9','thing 9'),('hd_hv_1_p_2_c_1','thing 13'),('hd_hv_1_p_2_c_2','thing 14'),('hd_hv_1_p_2_c_3','thing 15'),('hd_hv_1_p_2_c_4','thing 16'),('hd_hv_1_p_3_c_1','thing 17'),('hd_hv_1_p_3_c_2','thing 18'),('hd_hv_1_p_4_c_1','thing 19'),('vb_qd_b_1_c_1_d_1','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_10','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_11','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_12','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_13','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_14','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_15','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_16','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_17','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_18','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_19','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_2','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_20','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_21','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_22','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_3','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_4','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_5','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_6','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_7','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_8','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>'),('vb_qd_b_1_c_1_d_9','<div>Cơ sở giáo dục đại học có đủ các điều kiện sau đây được tổ chức đào tạo liên thông:</div>');
+/*!40000 ALTER TABLE `detail_test` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `images`
 --
 
@@ -122,6 +147,33 @@ LOCK TABLES `images` WRITE;
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
 INSERT INTO `images` VALUES (1,'02-VLVH-VB1.png',NULL),(2,'04-VLVH-LTCD.png',NULL),(3,'vhvl (1).png',NULL),(4,'03-VLVH-VB2.png',NULL);
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `test`
+--
+
+DROP TABLE IF EXISTS `test`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `test` (
+  `ID` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `descript` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ID_parent` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `test_E_FK` (`ID_parent`),
+  CONSTRAINT `test_E_FK` FOREIGN KEY (`ID_parent`) REFERENCES `test` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `test`
+--
+
+LOCK TABLES `test` WRITE;
+/*!40000 ALTER TABLE `test` DISABLE KEYS */;
+INSERT INTO `test` VALUES ('1','Văn bản - Quy định (Bộ Giáo dục và Đào tạo)',NULL),('2','Văn bản - qui định (Trường Đại học Mở Tp.Hồ Chí Minh)',NULL),('3','Hướng dẫn học viên',NULL),('4','Hướng dẫn sử dụng Email',NULL),('5','Hướng dẫn sử dụng hệ thống hỗ trợ học tập (LMS)',NULL),('6','Hướng dẫn sử dụng công cụ dạy/học trực tuyến Zoom',NULL),('hd_hv_1','Thông tin hướng dẫn sinh viên hình thức Vừa làm vừa học (2016)','3'),('hd_hv_1_p_1','TỔ CHỨC ĐÀO TẠO','hd_hv_1'),('hd_hv_1_p_1_c_1','Thời gian và kế hoạch đào tạo','hd_hv_1_p_1'),('hd_hv_1_p_1_c_10','Chuyển ngành','hd_hv_1_p_1'),('hd_hv_1_p_1_c_11','Học bằng thứ 2','hd_hv_1_p_1'),('hd_hv_1_p_1_c_12','Phúc tra và khiếu nại điểm','hd_hv_1_p_1'),('hd_hv_1_p_1_c_2','Đăng kí khối lượng học tập','hd_hv_1_p_1'),('hd_hv_1_p_1_c_3','Tổ chức các kì thi kết thúc học phần','hd_hv_1_p_1'),('hd_hv_1_p_1_c_4','Yêu cầu về trình độ ngoại ngữ, tin học','hd_hv_1_p_1'),('hd_hv_1_p_1_c_5','Bảo lưu kết quả, và miễn giảm học phần','hd_hv_1_p_1'),('hd_hv_1_p_1_c_6','Kiểm tra thi, kết thúc học phần','hd_hv_1_p_1'),('hd_hv_1_p_1_c_7','Vắng thi','hd_hv_1_p_1'),('hd_hv_1_p_1_c_8','Buộc thôi học - tạm dừng học','hd_hv_1_p_1'),('hd_hv_1_p_1_c_9','Chuyển trường, chuyển cơ sở đào tạo','hd_hv_1_p_1'),('hd_hv_1_p_2','XÉT VÀ CẤP BẰNG TỐT NGHIỆP','hd_hv_1'),('hd_hv_1_p_2_c_1','Về bản sao văn bằng tốt nghiệp','hd_hv_1_p_2'),('hd_hv_1_p_2_c_2','Xét tốt nghiệp','hd_hv_1_p_2'),('hd_hv_1_p_2_c_3','Văn bằng tốt nghiệp','hd_hv_1_p_2'),('hd_hv_1_p_2_c_4','Bảo lưu kết quả học tập và chuyển loại hình đào tạo','hd_hv_1_p_2'),('hd_hv_1_p_3','QUYỀN VÀ NGHĨA VỤ CỦA SINH VIÊN','hd_hv_1'),('hd_hv_1_p_3_c_1','Quyền của sinh viên','hd_hv_1_p_3'),('hd_hv_1_p_3_c_2','Nghĩa vụ của sinh viên','hd_hv_1_p_3'),('hd_hv_1_p_4','CÁC DỊCH VỤ TRỰC TUYẾN CƠ BẢN CHO SINH VIÊN','hd_hv_1'),('hd_hv_1_p_4_c_1','hệ thống email cho sinh viên http://mail.oude.edu.vn','hd_hv_1_p_4'),('hd_hv_2','Thông tin hướng dẫn sinh viên hình thức Đào tạo từ xa (2016)','3'),('hd_hv_3','Hướng dẫn đăng ký môn học trực tuyến','3'),('hd_hv_4','Hình thức thi các môn học','3'),('vb_qd_b_1','Thông báo số 538/QLCL-QLVBCC của Bộ Giáo dụ và Đào tạo về Danh sách các đơn vị đủ điều kiện tổ chức thi, cấp chứng chỉ ngoại ngữ theo Khung năng lực 6 bậc dùng cho Việt Nam và chứng chỉ ứng dụng công nghệ thông tin','1'),('vb_qd_b_1_c_1','CHƯƠNG I NHỮNG QUY ĐỊNH CHUNG','vb_qd_b_1'),('vb_qd_b_1_c_1_d_1','Điều 3. Mục đích đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_10','Điều 10. Thời gian đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_11','Điều 11. Chương trình đào tạo và công nhận giá trị chuyển đổi kết quả học tập','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_12','Điều 12. Tổ chức đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_13','Điều 13. Văn bằng tốt nghiệp và bảng điểm','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_14','Điều 14. Nhiệm vụ và quyền hạn của cơ sở giáo dục đại học tổ chức đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_15','Điều 15. Trách nhiệm cung cấp thông tin','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_16','Điều 16. Nhiệm vụ của người học','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_17','Điều 17. Quyền của người học','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_18','Điều 18. Chế độ báo cáo','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_19','Điều 19. Hoạt động kiểm tra, thanh tra, giám sát','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_2','Điều 2. Đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_20','Điều 20. Xử lý vi phạm','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_21','Điều 21. Chế độ lưu trữ','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_22','Điều 22. Quy định chuyển tiếp','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_3','Điều 3. Mục đích đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_4','Điều 4. Điều kiện tổ chức đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_5','Điều 5. Hồ sơ, trình tự và thủ tục đăng ký đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_6','Điều 6. Thẩm quyền quyết định đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_7','Điều 7. Điều kiện về văn bằng dự thi đào tạo liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_8','Điều 8. Chỉ tiêu tuyển sinh liên thông','vb_qd_b_1_c_1'),('vb_qd_b_1_c_1_d_9','Điều 9. Tuyển sinh','vb_qd_b_1_c_1'),('vb_qd_b_1_c_2','CHƯƠNG II ĐIỀU KIỆN TỔ CHỨC, HỒ SƠ, TRÌNH TỰ THỦ TỤC VÀ THẨM QUYỀN QUYẾT ĐỊNH ĐÀO TẠO LIÊN THÔNG','vb_qd_b_1'),('vb_qd_b_1_c_3','CHƯƠNG III TUYỂN SINH VÀ TỔ CHỨC ĐÀO TẠO LIÊN THÔNG','vb_qd_b_1'),('vb_qd_b_1_c_4','CHƯƠNG IV NHIỆM VỤ VÀ QUYỀN HẠN CỦA CƠ SỞ GIÁO DỤC ĐẠI HỌC TỔ CHỨC ĐÀO TẠO LIÊN THÔNG; TRÁCH NHIỆM CUNG CẤP THÔNG TIN','vb_qd_b_1'),('vb_qd_b_1_c_5','CHƯƠNG V  NHIỆM VỤ VÀ QUYỀN CỦA NGƯỜI HỌC','vb_qd_b_1'),('vb_qd_b_1_c_6','CHƯƠNG VI CHẾ ĐỘ BÁO CÁO, KIỂM TRA, THANH TRA VÀ XỬ LÝ VI PHẠM','vb_qd_b_1'),('vb_qd_b_2','Đào tạo liên thông trình độ cao đẳng, đại học (Ban hành kèm theo Thông tư số 55 /2012/TT-BGDĐT ngày 25 tháng 12 năm 2012 của Bộ trưởng Bộ Giáo dục và Đào tạo)','1'),('vb_qd_b_3','Quy định đào tạo liên thông trình độ cao đẳng, đại học','1'),('vb_qd_b_4','Qui định về đào tạo để cấp bằng tốt nghiệp đại học thứ hai','1'),('vb_qd_b_5','Quy chế đào tạo đại học và cao đẳng hình thức vừa làm vừa học','1'),('vb_qd_b_6','Quy chế tổ chức đào tạo, thi, kiểm tra, cấp chứng chỉ, văn bằng tốt nghiệp theo hình thức giáo dục từ xa','1');
+/*!40000 ALTER TABLE `test` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -157,4 +209,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-09 16:27:35
+-- Dump completed on 2021-04-23 16:29:12

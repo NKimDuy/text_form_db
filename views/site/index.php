@@ -45,7 +45,7 @@ $this->title = 'duy';
 <div class="row justify-content-center font-weight-bold"><h1 class=" text-info">TRA CỨU VĂN BẢN BIỂU MẪU</h1></div>
 <div class="row justify-content-center">
 	<div class='col-sm-8'>
-		<?= Html::activeDropDownList($textForm, 'ID_text_form',$itemTextForm, ['id' => 'allTextForm']) ?>
+		<?= Html::activeDropDownList($textForm, 'ID',$itemTextForm, ['id' => 'allTextForm']) ?>
 	</div>
 </div>
 

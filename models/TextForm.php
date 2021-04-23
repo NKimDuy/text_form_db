@@ -8,7 +8,7 @@ class TextForm extends ActiveRecord
 {
 	public static function tableName()
     {
-		return '{{text_form}}';
+		return '{{test}}';
     }
 	
 }

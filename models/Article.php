@@ -8,7 +8,7 @@ class Article extends ActiveRecord
 {
 	public static function tableName()
     {
-		return '{{article}}';
+		return '{{detail_test}}';
     }
 	
 }

@@ -60,7 +60,7 @@ $(document).ready(() => {
 			method: "GET",
 			url: "/site/get-specify-detail",
 			data: {
-				'idTextForm': $('#allTextForm').val()
+				'idTextForm': $('#allTextForm').val() // gửi ID của văn bản biểu mẫu để tìm các tiêu đề tương ứng
 			},
 			dataType: "JSON",
 			success: function(result) {
@@ -71,7 +71,7 @@ $(document).ready(() => {
 					//temp += '<div class="card-header"><a onclick=detail(' + "'" + item.ID_detail + "'" + ')>' + item.detail + '</a></div>';
 					temp += '<div class="card-header">Tiêu đề </div>';
 					temp += '<div class="card-body text-dark">';
-					temp += '<p class="card-text"><a id="showCard" style="color:#212529;" href="javascript:detail(' + "'" + item.ID_detail + "'" + ');">' + item.detail + '</a></p>';
+					temp += '<p class="card-text"><a id="showCard" style="color:#212529;" href="javascript:detail(' + "'" + item.ID + "'" + ');">' + item.descript + '</a></p>';
 					temp += '</div></div>';
 					
 					

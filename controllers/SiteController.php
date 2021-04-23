@@ -70,7 +70,7 @@ class SiteController extends Controller
     {
 		$images = Images::find()->all();
 		
-		$itemTextForm = ArrayHelper::map( TextForm::find()->all(), 'ID_text_form', 'type_text_form' );
+		$itemTextForm = ArrayHelper::map( TextForm::find()->where('ID_parent is null')->all(), 'ID', 'descript' );
 		$textForm = new TextForm();
         return $this->render('index', [
 			'textForm' => $textForm,
@@ -145,8 +145,8 @@ class SiteController extends Controller
 	{
 		$idDetail = \Yii::$app->request->get('id');
 		
-		$chapter = Chapter::find()
-							->where(['ID_detail' => $idDetail])
+		$chapter = TextForm::find()
+							->where(['ID_parent' => $idDetail])
 							->asArray()
 							->all();
 			
@@ -176,8 +176,8 @@ class SiteController extends Controller
 			$detail = [];
 			\Yii::$app->response->format = Response::FORMAT_JSON;
 			$idTextForm = \Yii::$app->request->get('idTextForm');
-			$detail = Detail::find()
-							->where(['ID_text_form' => $idTextForm])
+			$detail = TextForm::find()
+							->where(['ID_parent' => $idTextForm])
 							->all();
 			return $detail;
 		}
@@ -192,9 +192,11 @@ class SiteController extends Controller
 		{
 			\Yii::$app->response->format = Response::FORMAT_JSON;
 			$idChapter = \Yii::$app->request->get('id');
-			$article = Article::find()
-							->where(['ID_chapter' => $idChapter])
+			$article = TextForm::find()
+							->where(['ID_parent' => $idChapter])
 							->all();
+							
+			
 			return $article;
 			
 		}
