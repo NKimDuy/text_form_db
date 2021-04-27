@@ -14,6 +14,9 @@ function showArticle(id, chapter) { // hiển thị nội dung từng chương c
 		},
 		dataType: 'JSON',
 		success: function(result) {
+			
+			alert(JSON.stringify(result));
+			
 			let title = '<div class="row">';
 			title += '<div id="contentOftitle" class="col-4">';
 			title += '<div class="list-group" id="list-tab" role="tablist">';
@@ -22,8 +25,8 @@ function showArticle(id, chapter) { // hiển thị nội dung từng chương c
 			content += '<div class="tab-content" id="nav-tabContent">';
 			
 			result.forEach((item) => {
-				title += '<a class="list-group-item list-group-item-action" id="list-' + item.ID_article + '-list" data-toggle="list" href="#' + item.ID_article + '" role="tab" aria-controls="' + item.name_article + '">' + item.name_article + '</a>';
-				content += '<div class="tab-pane fade" id="' + item.ID_article + '" role="tabpanel" aria-labelledby="list-' + item.ID_article + '-list">' + item.content_article + '</div> ';
+				title += '<a class="list-group-item list-group-item-action" id="list-' + item[0] + '-list" data-toggle="list" href="#' + item[0] + '" role="tab" aria-controls="' + item[1] + '">' + item[1] + '</a>';
+				content += '<div class="tab-pane fade" id="' + item[0] + '" role="tabpanel" aria-labelledby="list-' + item[0] + '-list">' + item[2] + '</div> ';
 			});
 			
 			title += '</div></div>';
@@ -31,6 +34,8 @@ function showArticle(id, chapter) { // hiển thị nội dung từng chương c
 			
 			$("#showChapter").text(chapter);
 			$('#getArticle').html(title + content + '</div>');
+			
+			
 			
 		}
 	});

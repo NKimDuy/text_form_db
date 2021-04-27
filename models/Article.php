@@ -11,4 +11,6 @@ class Article extends ActiveRecord
 		return '{{detail_test}}';
     }
 	
+
+	
 }

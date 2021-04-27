@@ -195,9 +195,39 @@ class SiteController extends Controller
 			$article = TextForm::find()
 							->where(['ID_parent' => $idChapter])
 							->all();
-							
 			
-			return $article;
+			
+			
+			$data = [];
+			
+			forEach($article as $item)
+			{
+				$temp = [];
+				
+				$temp[] = $item->ID;
+				$temp[] = $item->descript;
+				$temp[] = $item->detailArticle->detail;
+				
+				/*
+				$detailArticle = Article::find()
+							->where(['ID' => $item->ID])
+							->asArray()
+							->all();
+				array_push($detailArticle, $item->descript);
+				
+				$data[] = $detailArticle;
+	
+				//$data[] = $item->descript;
+				//array_push($detailArticle, $item['descript']);
+				
+				//$data[] = $temp;
+				*/
+				
+				$data[] = $temp;
+			}
+			
+			
+			return $data;
 			
 		}
 	}

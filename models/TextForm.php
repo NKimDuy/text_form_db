@@ -11,4 +11,9 @@ class TextForm extends ActiveRecord
 		return '{{test}}';
     }
 	
+		public function getDetailArticle()
+		{
+			return $this->hasOne(Article::className(), ['ID' => 'ID']);
+		}
+	
 }
