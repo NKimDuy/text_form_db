@@ -1,4 +1,4 @@
-@media screen and (max-width:400px) { /* khi co màn hình về width 400px thì kích thước của contentOfChapter và contentOfTitle sẽ thay đổi  */
+@media screen and (max-width:991px) { /* khi co màn hình về width 400px thì kích thước của contentOfChapter và contentOfTitle sẽ thay đổi  */
 	#contentOftitle {
 		max-width:41.66667%;
 	
@@ -7,8 +7,41 @@
 		max-width:58.33333%;
 	
 	}
+	
+	#checkActive {/*tô màu cam vào mục đang chọn*/
+		display:block !important;
+	}
+	
+	#menu-toggle { /*khi co lại sẽ ẩn danh mục chọn bên tay trái*/
+		display:none;
+	}
+	
+	#sidebar-wrapper { /*khi co lại sẽ ẩn danh mục chọn bên tay trái*/
+		display:none ;
+	}
+	
+	/*
+	#sidebar-wrapper {
+		width:20%;
+		margin-left:0 !important;
+	}
+	
+	.responsive {
+		display: block !important;
+	}
+	.none-responsive {
+		display: none;
+	}
+	
+	.muc-luc {
+		display:none;
+	}
+	*/
 }
 
+.active-responsive {
+	background-color:#e95420;
+}
 
 #allTextForm {
 	margin-bottom: 10px;
@@ -67,8 +100,10 @@ ul {
 
 /* thiet lap css cho chapter */
 #showChapter {
+	/*
 	text-align: center;
 	width:90%;
+	*/
 }
 
 /* thiet lap css cho dòng chữ trung tâm đào tạo từ xa */

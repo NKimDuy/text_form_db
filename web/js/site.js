@@ -5,6 +5,14 @@ function detail(id) { // khi người dùng nhấn vào 1 tiêu đề, thì sẽ
 
 
 function showArticle(id, chapter) { // hiển thị nội dung từng chương của mỗi tiêu đề, chia làm 2 phần, bên trái là điều, bên phải là nội dung của từng điều 
+	
+	$("#checkActive span").removeClass("active-responsive");  // xóa màu nền ( màu cam ) của các mục trước
+	$("#active" + id).addClass("active-responsive"); // thêm màu cam vào mục đang chọn
+	
+	
+	$("#navbarSupportedContent").removeClass('show'); // khi chọn xong, sẽ tắt các mục
+	$("#hideNavbar").addClass('collapsed'); // khi chọn xong, sẽ tắt các mục
+
 	//alert(id);
 	$.ajax({
 		url: '/site/get-article',
@@ -15,7 +23,7 @@ function showArticle(id, chapter) { // hiển thị nội dung từng chương c
 		dataType: 'JSON',
 		success: function(result) {
 			
-			alert(JSON.stringify(result));
+			//alert(JSON.stringify(result));
 			
 			let title = '<div class="row">';
 			title += '<div id="contentOftitle" class="col-4">';
@@ -41,14 +49,18 @@ function showArticle(id, chapter) { // hiển thị nội dung từng chương c
 	});
 }
 
-function choiceWhichLiActive(id) { // khi chọn chương, sẽ biến chữ của chương sang màu trắng
-	$("#setActive li").removeClass("active");
-	$("#turnActive" + id).addClass("active");
-	
-	
-}
+
+
+
 
 $(document).ready(() => {
+	
+	$("#menu-toggle").click((e) => {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
+	
+	
 	$('#hideNavbar').css('display', 'none'); // ẩn thanh navbar mặc định của yii2 ( không ẩn, sẽ không hiện được nội dung của từng chương và điều)
 	
 	$('#allTextForm').prepend("<option selected>Các văn bản biểu mẫu </option>"); // chèn tiêu đề cho dropdownlist
